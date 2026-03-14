@@ -1,0 +1,53 @@
+
+@import './ConfirmModal.css';
+
+.interests-modal-content {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  max-width: 500px; /* A bit wider */
+  width: 100%;
+  text-align: center;
+}
+
+.interests-modal-content h2 {
+  margin-top: 0;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+.interests-modal-content p {
+  color: var(--text-light);
+  font-size: 1rem;
+  margin-bottom: 30px;
+}
+
+.interests-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+}
+
+.interest-button {
+  padding: 10px 18px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  border: 1px solid var(--border-color);
+  background-color: #f9f9f9;
+  color: var(--text-dark);
+  border-radius: 20px; /* Rounded pill shape */
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.interest-button:hover {
+  border-color: var(--primary-blue);
+}
+
+.interest-button.selected {
+  background-color: var(--primary-blue);
+  color: #fff;
+  border-color: var(--primary-blue);
+}

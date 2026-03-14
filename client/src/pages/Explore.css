@@ -1,0 +1,139 @@
+/* This centers the content and controls its width */
+.explore-container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.explore-container h2 {
+  font-weight: 600;
+  font-size: 1.8rem;
+}
+
+.explore-container p {
+  font-size: 1.1rem;
+  color: var(--text-light);
+  margin-top: 5px;
+}
+
+.explore-subtitle {
+  font-weight: 600;
+  font-size: 1.4rem;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 10px;
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+/* --- New Styles for Pre-made Challenges --- */
+.challenge-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 25px;
+}
+
+.challenge-card {
+  background: linear-gradient(135deg, var(--primary-blue), #0056b3);
+  color: #fff;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.challenge-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 86, 179, 0.4);
+}
+
+.challenge-icon {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.challenge-card h4 {
+  margin: 0 0 10px 0;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.challenge-card p {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 0.95rem;
+  margin-bottom: 20px;
+}
+
+/* This is the white "Join" button for the blue cards */
+.challenge-card .btn-view-cohort {
+  background-color: #fff;
+  color: var(--primary-blue);
+  width: 100%;
+}
+.challenge-card .btn-view-cohort:hover {
+  background-color: #f1f1f1;
+}
+.challenge-card .btn-view-cohort:disabled {
+  background-color: #aaa;
+  color: #fff;
+}
+/* --- End of New Styles --- */
+
+
+/* --- Styles for Community Cohorts (from Dashboard.css) --- */
+.cohorts-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 25px;
+}
+
+.cohort-card {
+  background-color: #fff; /* White card */
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.cohort-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+}
+
+.cohort-card h3 {
+  margin-top: 0;
+  font-weight: 600;
+  color: var(--primary-blue); /* Blue title */
+}
+
+.cohort-card p {
+  color: var(--text-light);
+  margin-bottom: 20px;
+  font-size: 0.95rem;
+}
+
+.btn-view-cohort {
+  display: inline-block;
+  width: 100%; /* Make button full-width of card */
+  padding: 12px 16px;
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+  color: #fff;
+  background-color: var(--primary-blue);
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+  cursor: pointer;
+}
+
+.btn-view-cohort:hover {
+  background-color: var(--primary-blue-hover);
+}
+
+.btn-view-cohort:disabled {
+  background-color: #aaa;
+  cursor: not-allowed;
+}

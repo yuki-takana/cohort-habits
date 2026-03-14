@@ -1,0 +1,183 @@
+/* This centers the form and gives it the "card" look */
+.form-container {
+  max-width: 500px; 
+  margin: 60px auto;
+  padding: 40px;
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  background-color: #fff;
+  text-align: center;
+}
+
+/* Icon from screenshot */
+.form-icon {
+  font-size: 2.5rem;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.form-container h2 {
+  margin-top: 0;
+  font-weight: 600;
+}
+
+.form-subtitle {
+  font-size: 1rem;
+  color: var(--text-light);
+  margin-bottom: 30px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+/* This styles ALL our inputs, textareas, and selects */
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="password"],
+.form-group select,
+.form-group textarea {
+  width: 95%; /* Fix padding issue */
+  padding: 12px 15px;
+  font-size: 1rem;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  font-family: 'Poppins', sans-serif;
+  color: var(--text-dark);
+  background-color: #fff;
+}
+
+/* This styles the placeholder text */
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: #aaa;
+}
+
+/* --- New Styles for Date Picker --- */
+/* This wrapper makes the date picker match our other inputs */
+.date-picker-wrapper input {
+  width: 95%;
+  padding: 12px 15px;
+  font-size: 1rem;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  font-family: 'Poppins', sans-serif;
+  color: var(--text-dark);
+  background-color: #fff; /* Fix for datepicker */
+}
+
+/* This makes the date inputs appear side-by-side */
+.date-range-group {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+}
+.date-range-group .form-group {
+  width: 48%; /* Each picker takes half the space */
+}
+/* --- End Date Picker Styles --- */
+
+
+.form-button {
+  display: block;
+  width: 100%;
+  padding: 14px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff;
+  background-color: var(--primary-blue);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.form-button:hover {
+  background-color: var(--primary-blue-hover);
+}
+
+.form-button:disabled {
+  background-color: #aaa;
+  cursor: not-allowed;
+}
+
+.form-error {
+  color: var(--error-red);
+  background-color: #fdd;
+  border: 1px solid var(--error-red);
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.form-footer-link {
+  margin-top: 30px;
+  font-size: 0.9rem;
+  color: var(--text-light);
+}
+
+.form-footer-link a {
+  color: var(--primary-blue);
+  font-weight: 500;
+  text-decoration: none;
+}
+
+/* --- Styles for Day Picker --- */
+.day-picker {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.day-picker-label {
+  display: block;
+  margin-bottom: 15px;
+  text-align: left;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.day-checkbox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+
+.day-checkbox input {
+  display: none;
+}
+
+.day-checkbox span {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border: 1px solid var(--border-color);
+  border-radius: 50%;
+  line-height: 30px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: var(--text-light);
+  transition: all 0.2s ease;
+}
+
+.day-checkbox input:checked + span {
+  background-color: var(--primary-blue);
+  color: #fff;
+  border-color: var(--primary-blue);
+}
+
+.day-checkbox:hover span {
+  border-color: var(--primary-blue);
+}

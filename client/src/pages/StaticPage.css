@@ -1,0 +1,90 @@
+/* Header styling */
+.static-header {
+  background-color: #fff;
+  border-bottom: 1px solid var(--border-color);
+  padding: 50px 40px;
+  text-align: center;
+}
+
+.static-header h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 0 0 10px 0;
+  color: var(--text-dark);
+}
+
+.static-header p {
+  font-size: 1.15rem;
+  color: var(--text-light);
+  margin: 0;
+}
+
+/* Main content styling */
+.static-page-container {
+  max-width: 800px;
+  margin: 0 auto; /* No top margin, header handles it */
+  padding-bottom: 60px;
+}
+
+.static-content {
+  padding: 40px 20px;
+  background-color: #fff;
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  margin: 40px 20px 0 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  line-height: 1.7;
+}
+
+.static-content h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.static-content p {
+  color: var(--text-light);
+  margin-bottom: 20px;
+}
+
+/* FAQ specific */
+.faq-item {
+  margin-bottom: 30px;
+  border-bottom: 1px dashed var(--border-color);
+  padding-bottom: 20px;
+}
+.faq-item:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.faq-item h4 {
+  font-size: 1.15rem;
+  font-weight: 600;
+  margin: 0 0 10px 0;
+}
+
+/* Contact specific */
+.contact-info {
+  margin-top: 30px;
+}
+.contact-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+}
+.contact-icon {
+  font-size: 1.5rem;
+  color: var(--primary-blue);
+  margin-right: 20px;
+}
+.contact-details strong {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--text-dark);
+}
+.contact-details p {
+  margin: 5px 0 0 0;
+  font-size: 1rem;
+}

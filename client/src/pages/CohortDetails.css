@@ -1,0 +1,177 @@
+.cohort-details-container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.loading-text {
+  text-align: center;
+  margin-top: 60px;
+  color: var(--text-light);
+}
+
+.cohort-header {
+  background-color: #fff;
+  border: 1px solid var(--border-color);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  padding: 30px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.cohort-header h2 {
+  margin-top: 0;
+  font-weight: 600;
+  font-size: 1.8rem;
+}
+
+.cohort-header p {
+  font-size: 1.1rem;
+  color: var(--text-light);
+  margin: 5px 0 10px 0;
+}
+
+.active-days {
+  font-size: 0.9rem !important;
+  font-weight: 500;
+  color: var(--text-dark) !important;
+  font-style: italic;
+}
+
+/* --- New Main Progress Bar Wrapper --- */
+.cohort-main-progress {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+
+.btn-checkin {
+  padding: 14px 30px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #fff;
+  background-color: var(--primary-blue);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: all 0.2s ease;
+}
+
+.btn-checkin:hover {
+  background-color: var(--primary-blue-hover);
+}
+
+.btn-checkin.checked-in {
+  background-color: #28a745; /* Green */
+  cursor: not-allowed;
+}
+.btn-checkin.checked-in:hover {
+  background-color: #218838;
+}
+
+.btn-checkin.disabled {
+  background-color: #aaa;
+  cursor: not-allowed;
+}
+.btn-checkin.disabled:hover {
+  background-color: #aaa;
+}
+
+.cohort-progress {
+  margin-top: 40px;
+  background-color: #fff;
+  border: 1px solid var(--border-color);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.cohort-progress h3 {
+  text-align: center;
+  margin-top: 0;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+
+.member-status-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-top: 35px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.member-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.member-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  border-bottom: 1px solid #f1f1f1;
+  background-color: #fff;
+}
+.member-item:first-child {
+  border-top: 1px solid #f1f1f1;
+}
+
+.member-name {
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.status {
+  font-weight: 600;
+  padding: 6px 12px;
+  border-radius: 16px;
+  font-size: 0.9rem;
+}
+
+.status-completed {
+  color: #218838;
+  background-color: #e9f7ec;
+}
+
+.status-pending {
+  color: #777;
+  background-color: #f1f1f1;
+}
+
+/* --- New Danger Zone Styles --- */
+.danger-zone {
+  margin-top: 40px;
+  background-color: #fff;
+  border: 1px solid var(--error-red);
+  padding: 30px;
+  border-radius: 12px;
+}
+
+.danger-zone h3 {
+  margin-top: 0;
+  color: var(--error-red);
+}
+
+.danger-zone p {
+  color: var(--text-light);
+  font-size: 0.9rem;
+}
+
+.btn-delete {
+  padding: 12px 20px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff;
+  background-color: var(--error-red);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.btn-delete:hover {
+  background-color: #c82333;
+}

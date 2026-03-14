@@ -1,0 +1,82 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  border-bottom: 1px solid var(--border-color);
+  background-color: #fff;
+  height: 40px; 
+}
+
+.navbar h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.navbar h1 a {
+  text-decoration: none;
+  color: var(--text-dark);
+  display: flex;
+  align-items: center;
+}
+
+/* This targets BOTH <Link> and <a> tags inside the list */
+.nav-links a {
+  font-weight: 500;
+  color: var(--text-light);
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 8px;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.nav-links a:hover {
+  background-color: #f1f1f1;
+  color: var(--text-dark);
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  margin-left: 10px;
+  display: flex; 
+  align-items: center;
+}
+
+
+.navbar-username-link {
+  font-weight: 500;
+  color: var(--text-dark) !important; /* Make it stand out */
+  background-color: transparent !important; 
+}
+.navbar-username-link:hover {
+  background-color: #f1f1f1 !important; 
+  color: var(--text-dark) !important;
+}
+
+
+/* This styles the "Sign Up" button */
+.nav-links a[href="/register"] {
+  background-color: var(--primary-blue);
+  color: #fff;
+}
+
+.nav-links a[href="/register"]:hover {
+  background-color: var(--primary-blue-hover);
+  color: #fff;
+}
+
+/* This styles the "Logout" link as a regular link */
+.nav-links a[href="#!"] {
+  font-weight: 500;
+  color: var(--text-light);
+  cursor: pointer;
+}

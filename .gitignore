@@ -1,0 +1,28 @@
+# Root-level gitignore for cohort-habits
+
+# Environment files (NEVER commit these — they contain secrets)
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Node dependencies
+node_modules/
+**/node_modules/
+
+# Build outputs
+build/
+dist/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Coverage
+coverage/

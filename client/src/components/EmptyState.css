@@ -1,0 +1,72 @@
+.empty-state-container {
+  background-color: #fff;
+  border: 1px dashed var(--border-color); /* Dashed border to show it's "empty" */
+  border-radius: 12px;
+  padding: 50px;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.empty-state-icon {
+  font-size: 3rem;
+  line-height: 1;
+  margin-bottom: 20px;
+}
+
+.empty-state-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--text-dark);
+  margin: 0 0 10px 0;
+}
+
+.empty-state-message {
+  font-size: 1rem;
+  color: var(--text-light);
+  max-width: 400px;
+  margin: 0 auto 30px auto;
+  line-height: 1.6;
+}
+
+.empty-state-actions {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+/* Base button styles for empty state */
+.empty-state-actions a {
+  display: flex;
+  align-items: center;
+  gap: 8px; /* Space between icon and text */
+  text-decoration: none;
+  padding: 12px 20px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border: 2px solid transparent;
+}
+
+/* Primary button (matches our main blue) */
+.btn-primary-empty {
+  background-color: var(--primary-blue);
+  color: #fff;
+  border-color: var(--primary-blue);
+}
+.btn-primary-empty:hover {
+  background-color: var(--primary-blue-hover);
+  border-color: var(--primary-blue-hover);
+}
+
+/* Secondary button (white with blue border) */
+.btn-secondary-empty {
+  background-color: #fff;
+  color: var(--primary-blue);
+  border-color: var(--primary-blue);
+}
+.btn-secondary-empty:hover {
+  background-color: #f8f9fa;
+  color: var(--primary-blue-hover);
+}

@@ -1,0 +1,25 @@
+.motivation-container {
+  background-color: #fff;
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 25px;
+  text-align: center;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+}
+
+.motivation-title {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text-light);
+  margin: 0 0 10px 0;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.motivation-quote {
+  font-size: 1.1rem;
+  font-style: italic;
+  color: var(--text-dark);
+  margin: 0;
+}

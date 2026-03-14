@@ -1,0 +1,96 @@
+/* --- Hero Section --- */
+.home-hero {
+  /* This is the blue gradient from your screenshot */
+  background: linear-gradient(105deg, #007bff 0%, #0056b3 100%);
+  
+  color: #fff;
+  padding: 100px 20px; 
+  text-align: center;
+}
+
+.hero-title {
+  font-size: 3.2rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.hero-subtitle {
+  font-size: 1.2rem;
+  color: #eee;
+  margin-bottom: 40px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero-buttons .btn {
+  margin: 0 10px;
+  font-size: 1.1rem;
+}
+
+/* --- Reusable Button Styles --- */
+.btn {
+  text-decoration: none;
+  padding: 12px 25px;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border: 2px solid transparent;
+}
+
+.btn-primary {
+  background-color: var(--primary-blue);
+  color: #fff;
+  border-color: var(--primary-blue);
+}
+.btn-primary:hover {
+  background-color: var(--primary-blue-hover);
+  border-color: var(--primary-blue-hover);
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: #fff;
+  border-color: #fff;
+}
+.btn-secondary:hover {
+  background-color: #fff;
+  color: var(--text-dark); /* Dark text on white hover */
+}
+
+/* --- How It Works Section --- */
+.how-it-works {
+  padding: 80px 20px; /* More space */
+  text-align: center;
+  background-color: #fff;
+}
+.how-it-works h2 {
+  font-size: 2.2rem;
+  font-weight: 600;
+  margin-bottom: 60px; /* More space */
+  color: var(--text-dark);
+}
+.steps-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px; /* More space */
+}
+.step {
+  max-width: 320px;
+}
+.step h3 {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.step p {
+  color: var(--text-light);
+  line-height: 1.6;
+}
+
+/* --- THIS IS THE NEW STYLE FOR ICONS --- */
+.step-icon {
+  font-size: 2.5rem; /* Icon size */
+  color: var(--primary-blue); /* Icon color */
+  margin-bottom: 20px;
+}
